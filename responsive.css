@@ -67,7 +67,7 @@
         padding-top: 20px;
     }
     .header-btn {
-        width: 29%;
+        width: 39%;
         display: flex;
         justify-content: flex-end;
         padding-bottom: 20px;
@@ -234,7 +234,12 @@
         font-size: 24px;
     }
 }
-
+input.mobile-check{
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
 
 @media (max-width:742px) {
     .banner-section {
@@ -288,17 +293,62 @@
     .container h1 {
         font-size: 24px;
     }
+    .header-list-item ul {
+        text-align: left;
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
+    .mobile-check:checked ~ ul{
+        visibility: visible;
+        opacity: 1;
+        margin-top: 51px;
+        height: 100%;
+    }
+    input.mobile-check {
+        position: absolute;
+        top: 21px;
+        left: 6px;
+        width: 33px;
+        height: 33px;
+        opacity: 0;
+        
+        display: block;
+    }
+    .header-list-item {
+        position: relative;
+    }
+    .header-list-item ul li {
+        display: block;
+
+    }
+    .header-list-item ul li a {
+        padding: 4px 15px;
+    }
+    .header-list-item ul li ul {
+        top: -121px;
+        left: 39%;
+        background-color: transparent;
+    }
+    .header-list-item ul li ul li {
+        border-bottom: none;
+    }
+    .mobile-menu {
+        font-size: 28px;
+        position: absolute;
+        top: 22px;
+        left: 10px;
+        pointer-events: none;
+        display: block;
+    }
 }
 
 @media (max-width:588px) {
-    .header-btn {
-        display: none;
-    }
     .header-list-item {
-        width: 100%;
+        width: 54%;
     }
     .header-list-item ul {
-        text-align: center;
+        text-align: left;
     }
     .sarvice-box-right p {
         font-size: 16px;
@@ -370,6 +420,9 @@
     }
     .banner-bottom {
         padding: 29px;
+    }
+    .header-btn .problem {
+        padding: 8px 11px;
     }
 }
 

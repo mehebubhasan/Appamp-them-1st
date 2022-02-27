@@ -102,7 +102,7 @@ a{
    
 }
 
-.header-btn a{
+.header-btn .problem{
     display: block;
     padding: 10px 20px;
     border: 1px solid #ddd;
@@ -111,7 +111,7 @@ a{
     margin-top: 10px;
     color: black;
 }
-.header-btn a:hover{
+.header-btn .problem:hover{
     color: white;
     background-color:black;
 }
